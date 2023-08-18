@@ -22,10 +22,10 @@
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- triangle card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                    <figure class="m-5"><img src="./images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <p>Area (A) = 0.5 x b x h</p>
                         <p>
                             <!-- triangle base -->
                             <input type="text" id="triangle-base"
@@ -45,14 +45,15 @@
                 </div>
                 <!-- rectangle card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <figure class="m-5"><img src="./images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Rectangle</h2>
-                        <p>Area (A) = w X l</p>
+                        <p>Area (A) = w x l</p>
                         <p>
                             <!-- rectangle width -->
                             <input type="text" id="rectangle-width"
-                                class="border bg-gray-200 rounded-md w-20 text-xl px-2 outline-none" placeholder="width">
+                                class="border bg-gray-200 rounded-md w-20 text-xl px-2 outline-none"
+                                placeholder="width">
                             <span class="ml-2">cm</span>
                             <!-- rectangle len -->
                             <input type="text" id="rectangle-length"
@@ -68,10 +69,10 @@
                 </div>
                 <!-- parallelogram card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                    <figure class="m-5"><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">parallelogram</h2>
-                        <p>Area (A) = b X h</p>
+                        <p>Area (A) = b x h</p>
                         <p>
                             <!-- parallelogram base -->
                             <input type="text" id="parallelogram-base"
@@ -85,29 +86,32 @@
                         </p>
                         <p class="text-2xl ">Area: <span id="parallelogram-area">0</span>cm<sup>2</sup></p>
                         <div class="card-actions">
-                            <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
+                            <button onclick="calculateParallelogramArea()"
+                                class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- 2 card -->
+                <!-- Ellipse card -->
                 <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                    <figure class="m-5"><img src="./images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- 3 card -->
-                <div class="card  bg-base-100 shadow-xl">
-                    <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) = π x a x b</p>
+                        <p>
+                            <!-- ellipse base -->
+                            <input type="text" id="ellipse-major-radius"
+                                class="border bg-gray-200 rounded-md w-20 text-xl px-2 outline-none"
+                                placeholder="large">
+                            <span class="ml-2">cm</span>
+                            <!-- ellipse height -->
+                            <input type="text" id="ellipse-minor-radius"
+                                class="border bg-gray-200 rounded-md w-20 text-xl ml-4 px-2 outline-none"
+                                placeholder="short">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p class="text-2xl ">Area: <span id="ellipse-area">0</span>cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
