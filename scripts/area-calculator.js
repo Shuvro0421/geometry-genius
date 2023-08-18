@@ -10,16 +10,32 @@ function calculateRectangleArea() {
     const width = getInputValue('rectangle-width');
     const length = getInputValue('rectangle-length');
     const area = width * length;
+
+    if(isNaN(width) || isNaN(length)){
+        alert('Insert number');
+        return;
+    }
+
     setElementInnerText('rectangle-area', area);
 
 }
+
+
 
 // reusable function --reduce duplicate code
 function calculateParallelogramArea() {
     const base = getInputValue('parallelogram-base');
     const height = getInputValue('parallelogram-height');
     const area = base * height;
+
+    if(isNaN(base) || isNaN(height)){
+        alert('Insert number');
+        return;
+    }
+
     setElementInnerText('parallelogram-area', area);
+
+
 
 
 }
@@ -47,4 +63,7 @@ function setElementInnerText(elementId, area) {
     element.innerText = area;
 
 }
+
+// data validation
+// set proper type 
 
